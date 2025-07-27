@@ -8,13 +8,12 @@
 
     <title>Cooking Recipes</title>
 
-    <style type="text/tailwindcss">
-      
-    </style>
+    <style type="text/tailwindcss"> </style>
+    <link href="https://db.onlinewebfonts.com/c/48a795f1f7d087d24f554f0f5ec9fb05?family=KyivType+Sans-" rel="stylesheet">  
 </head>
 <body>
     <!--this part of navigation bar from Hua-->
-    <nav class="w-[1280px] h-32 relative bg-stone-100 overflow-hidden">
+    <nav class="flex flex-wrap justify-center align-middle h-32 relative bg-stone-100 overflow-hidden">
          <!--logo-->
          <div class="flex flex-col">
                 <span class="text-black font-black text-xl leading-none ">FLAVOUR<br>FUSION</span>
@@ -45,18 +44,62 @@
          </ul>
     </nav>
 
-    <header> 
+    <header> <!--this is for leon-->
     </header>
 
-    <section>
+    <section> <!--this is for leon-->
     </section>
 
     <main>
 
-        <summary>
+        <summary> <!--this is for leon-->
         </summary>
 
-        <article>
+        <!--this part of article from Hua-->
+        <article class="w-screen h-[500px]" style="background: #FFBA8C;">
+            <div class="py-12 px-4 rounded-lg" style="background: #FFBA8C;">
+                <h2 class="text-5xl font-black text-gray-800 mb-8 text-center" style="font-family: KyivType Sans-"> <!--using this font-->
+                    Streaming + Rezept abo:
+                </h2>
+                <!--this is a total card of three small cards-->
+                <div class="flex justify-center items-center gap-0 max-w-3xl mx-auto rounded-xl shadow-lg p-0">
+                    <!--filmcover-->
+                    <img class="rounded-l-lg w-60 h-60 object-cover" alt="Grand Budapest Hotel" src="images/Grand Budapest Hotel.png" />
+                    <!--cooking torte-->
+                    <img class="w-60 h-60 object-cover" alt="Mendl’s Courtesan au Chocolat" src="images/Mendl’s Courtesan au Chocolat.png" />
+                    <!-- Text und Buttons -->
+                    <div class="bg-white rounded-r-lg  p-6 flex flex-col justify-between h-60 w-72">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Grand Budapest Hotel-<br>Mendl’s Courtesan au Chocolat</h3>
+                         </div>
+                    <!--this is first buttom-->
+                    <button class="bg-yellow-400 text-purple-900 font-bold py-2 px-4 rounded flex items-center gap-2 mb-4">
+                        <span>SUPERPAKET ABONNIEREN</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+
+                    <!--this is second unhovered button-->
+                    <div class="text-gray-700 text-sm flex flex-col gap-1">
+                         <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                            4,99 EURO PRO WOCHE
+                        </div>
+
+                    <!--this is third unhovered button-->
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                               <path d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                              24,99 EURO PRO MONAT
+                        </div>
+                     </div>
+                 </div>
+            </div>
+            
         </article>
 
         <section>
