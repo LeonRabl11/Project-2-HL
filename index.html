@@ -8,6 +8,7 @@
 
     <title>Cooking Recipes</title>
 
+    
     <style type="text/tailwindcss">
 
 
@@ -15,8 +16,8 @@
 </head>
 <body>
 
-    <!--this part of navigation bar from Hua-->
-    <nav class="w-[1280px] h-32 relative bg-stone-100 overflow-hidden">
+        <!--this part of navigation bar from Hua-->
+    <nav class="flex flex-wrap justify-center align-middle h-32 relative bg-stone-100 overflow-hidden">
          <!--logo-->
          <div class="flex flex-col">
                 <span class="text-black font-black text-xl leading-none ">FLAVOUR<br>FUSION</span>
@@ -46,9 +47,8 @@
                 </li>
          </ul>
     </nav>
-    
-    <!--Backgroundcover, header, call to action from Leon-->
-    <header>
+
+ <!--Backgroundcover, header, call to action from Leon-->
       
         <div class="relative h-[900px] clip-path-[inset(0_0_15rem_0)] overflow-visible flex flex-col items-center">
         <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
@@ -137,21 +137,132 @@
         </div>
         </section>  
         </header>
-
+  
+  
     <main>
 
-        <summary>
-        </summary>
+        
+        <!--this part of article from Hua-->
+        <article class="w-screen h-[500px]" style="background: #FFBA8C;">
+            <div class="py-12 px-4 rounded-lg" style="background: #FFBA8C;">
+                <h2 class="text-5xl font-black text-gray-800 mb-8 text-center" style="font-family: KyivType Sans-"> <!--using this font-->
+                    Streaming + Rezept abo:
+                </h2>
+                <!--this is a total card of three small cards-->
+                <div class="flex justify-center items-center gap-0 max-w-3xl mx-auto rounded-xl shadow-lg p-0">
+                    <!--filmcover-->
+                    <img class="rounded-l-lg w-60 h-60 object-cover" alt="Grand Budapest Hotel" src="images/Grand Budapest Hotel.png" />
+                    <!--cooking torte-->
+                    <img class="w-60 h-60 object-cover" alt="Mendl’s Courtesan au Chocolat" src="images/Mendl’s Courtesan au Chocolat.png" />
+                    <!-- Text und Buttons -->
+                    <div class="bg-white rounded-r-lg  p-6 flex flex-col justify-between h-60 w-72">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Grand Budapest Hotel-<br>Mendl’s Courtesan au Chocolat</h3>
+                         </div>
+                    <!--this is first buttom-->
+                    <button class="bg-yellow-400 text-purple-900 font-bold py-2 px-4 rounded flex items-center gap-2 mb-4">
+                        <span>SUPERPAKET ABONNIEREN</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
 
-        <article>
+                    <!--this is second unhovered button-->
+                    <div class="text-gray-700 text-sm flex flex-col gap-1">
+                         <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                            4,99 EURO PRO WOCHE
+                        </div>
+
+                    <!--this is third unhovered button-->
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                               <path d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                              24,99 EURO PRO MONAT
+                        </div>
+                     </div>
+                 </div>
+            </div>
+            
         </article>
 
-        <section>
-        </section>
+        <!--this part of section 2 from Hua-->
+        <section class="w-screen h-auto mx-auto p-8 flex flex-col lg:flex-row items-center justify-center" style="background: #F9F7F3;">
+                <div class="lg:w-1/2 space-y-6">
+                    <h3 class="text-3xl md:text-4xl font-semibold text-gray-800" style="font-family: KyivType Sans-">
+                        Verpasse kein Rezept mehr!
+                    </h3>
+                    <br>
+                    <!--App store Buttons-->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#">
+                            <img src=" https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-12"/>
+                        </a>
+                        <a href="#">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Apple Store" class="h-12" />
+                        </a>
+                    </div>
+                    
+                    <!--Newsletter abonieren-->
+                    <div class="flex gap-4 items-center">
+                        <button class="flex items-center gap-2 bg-purple-900 text-white px-0 rounded-md" >
+                            <span class="px-4 py-2 rounded text-s">NEWSLETTER</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4-4m-4 4l4 4" />
+                            </svg>
+                        </button>
+                        <button class="bg-blue-500 px-4 py-2 rounded-md">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M9.64 16.89l.01-.02 1.19-3.87 4.89-4.4c.23-.2-.04-.31-.28-.2l-6.07 2.88-3.5-1.1c-.76-.23-.77-.75.16-1.1l13.67-5.2c.63-.23 1.17.15.97 1.04l-2.33 10.85c-.17.77-.65.95-1.32.59l-3.7-2.74-1.79 1.72c-.2.2-.38.38-.78.38z" />
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <!--this is social icons groups-->
+                    <div>
+                        <h3 class="mt-6 mb-2 font-medium text-gray-700">Connect with us</h3>
+                        <div class="flex gap-3">
+                            <a href="#"><img class="w-10" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+                            <a href="#"><img class="w-10" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+                            <a href="#"><img class="w-10" src="https://cdn-icons-png.flaticon.com/512/5968/5968896.png" alt="X" /></a>
+                            <a href="#"><img class="w-10" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+                            <a href="#"><img class="w-10" src="https://cdn-icons-png.flaticon.com/512/5968/5968893.png" alt="Threads" /></a>
+                            <a href="#"><img class="w-10" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /></a>
+                        </div>   
+                    </div>
+                </div>
+
+                <!--Illustration background-->
+                <div class="lg:w-1/2 mt-10 lg:mt-0 flex justify-end">
+                    <img src="images/cooking lady.png" class="w-full max-w-sm" alt="image of cooking lady"/>
+                </div>
+
+                <div class="text-center mt-12 mb-4 flex justify-end">
+                    <a href="#top" class="text-purple-800 font-semibold">↑ ZURÜCK TOP</a>
+                </div>
+          </div>
         
     </main>
 
-    <footer>
+    <!--this is part of Footer from Hua-->
+    <footer class="w-screen h-auto flex flex-row justify-center relative gap-4" style="background: #FFBA8C;"">
+        <div class="basis-64 font-normal px-10 py-4">
+            <ul>
+                <li>About Us </li>
+                <li>AGB </li>
+                <li>Datenschutz</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <div class="basis-64 font-normal px-4 py-4"><h3>Unsere Mandaten</h3></div>
+        <div class="basis-128 flex flex-shrink-0 justify-center align-middle py-4 gap-4">
+            <img src="images/logo.png" alt="logo of flavour fusion" class="w-15 h-15" />
+            <img src="images/RTL_logo_collection_01_sRGB.png" alt="logo of RTL" class="w-auto h-10" />
+            <img src="https://images.ctfassets.net/y2ske730sjqp/821Wg4N9hJD8vs5FBcCGg/9eaf66123397cc61be14e40174123c40/Vector__3_.svg?w=460" alt="logo of flavour fusion" class="w-auto h-10" />
+        </div>
     </footer>
     
 </body>
